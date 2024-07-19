@@ -75,8 +75,8 @@ def shop_trip() -> None:
 
         print(f"{customer.name} rides to {current_shop.name}")
         print()
-        today = datetime.datetime.now()
-        print(f"Date: {today.strftime("%d/%m/%Y %H:%M:%S")}")
+        today = datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")
+        print(f"Date: {today}")
         print(f"Thanks, {customer.name}, for your purchase!")
         print("You have bought:")
 
